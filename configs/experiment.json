@@ -1,0 +1,19 @@
+{
+  "source_root": "../radiotherapie_ia",
+  "prepared_dir": "../radiotherapie_ia/data/prepares_lot_20261103_015204_401375",
+  "training_dir": "../radiotherapie_ia/resultats/entrainement_20261104_021206_318510",
+  "test_dir": "../radiotherapie_ia/resultats/entrainement_20261104_021206_318510/test_final_20261104_143633_153159",
+  "expected_epoch": 5,
+  "test_patients": [
+    "P08",
+    "P12",
+    "P39",
+    "P40"
+  ],
+  "test_slices": 531,
+  "seed": 20261103,
+  "epochs": 40,
+  "patience": 8,
+  "batch_size": 4,
+  "learning_rate": 0.001
+}
