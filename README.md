@@ -319,8 +319,10 @@ The model comparison requires the original `src/essai_modele.py` under `source_r
 - Synthetic predictions were finite and non-negative.
 - Cleaned and original model outputs were exactly identical for the tested synthetic input.
 
-Patient-level numerical reproduction of the reported metrics remains pending.
-
+The reorganized evaluation pipeline was rerun locally using the original
+epoch-5 checkpoint on P08, P12, P39 and P40, comprising 531 usable slices.
+All five reported U-Net and baseline averages matched the original results
+at the displayed precision. No retraining was performed.
 ## Running the workflow
 
 Run commands from the repository root.
@@ -391,7 +393,9 @@ python src/visualiser_relief_test.py
 - Limited overlap of high-dose regions.
 - Remaining data-quality uncertainty for P08.
 - No external or clinical validation.
-- Patient-level reproduction of the reorganized pipeline remains unverified.
+- Evaluation reproduction was checked locally with the existing checkpoint
+  and prepared data. Reproduction from a fresh dataset download and a new
+  training run has not been verified.
 
 Potential improvements include verified treatment-target inputs, larger controlled datasets, neighboring-slice information and comparison of losses emphasizing high-dose regions.
 
