@@ -181,6 +181,26 @@ These results indicate partial learning of the dose distribution. They do not es
 - **P39:** localization of the main focus with an underestimated high-dose extent.
 - **P40:** an overly concentrated prediction, combining an excessive maximum with an insufficient high-dose extent.
 
+## Results figures
+
+### Validation performance
+
+![Validation score over training epochs](docs/figures/courbe_validation.png)
+
+The original experiment selected epoch 5 using validation performance.
+Training stopped after eight subsequent epochs without improvement.
+
+### Errors by test patient
+
+![Dose prediction errors by test patient](docs/figures/erreurs_test_par_patient.png)
+
+Comparison of the U-Net and constant baseline for individual test patients.
+Global errors and errors within annotated regions are shown separately.
+P08 remains included with its documented data-quality reservation.
+
+These charts describe the original experiment; they were not regenerated
+during the repository reorganization.
+
 ## Repository contents
 
 | Path | Purpose |
