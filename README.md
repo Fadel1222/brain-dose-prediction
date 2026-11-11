@@ -408,3 +408,10 @@ Improvements guided by the current test findings require evaluation on new indep
 This work formed part of a joint academic project with **Nizar Samri**, who developed a separate segmentation component.
 
 The two components were not evaluated as an integrated segmentation-to-dose pipeline.
+
+## License
+
+Original project code is distributed under the [MIT License](LICENSE).
+
+The PROTEAS dataset remains subject to its own license and attribution
+requirements. This code license does not relicense third-party material.
